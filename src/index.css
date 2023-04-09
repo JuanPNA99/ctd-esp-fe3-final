@@ -11,6 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+
 .favButton{
   background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
@@ -113,10 +119,27 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .dark{
   background-color: #12121296;
   color: white;
 }
 .dark > a {
   color: white;
+}
+
+.navBar-dark {
+  background-color: #05050596;
+  color: white;
+}
+
+.outlet {
+  min-height: calc(100vh - 183px);
 }
